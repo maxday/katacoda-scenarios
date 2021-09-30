@@ -1,1 +1,0 @@
-docker pull public.ecr.aws/lambda/nodejs:14
