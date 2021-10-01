@@ -1,4 +1,4 @@
 #!/bin/bash
 mkdir -p /root/dash-serverless-workshop
-docker pull maxday/dash
-docker run -it maxday/dash
+docker pull maxday/dash:2
+docker run -it -v "$(pwd)"/dash-serverless-workshop:/root/dash-serverless-workshop maxday/dash:2
