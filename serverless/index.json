@@ -6,12 +6,12 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "courseData": "setup.sh"
     },
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "courseData": "setup.sh"
       },
       {
         "title": "Step 2",

@@ -1,4 +1,3 @@
 #!/bin/bash
-
-docker pull maxday/dash:1
+docker pull maxday/dash
 docker run -it maxday/dash:1
