@@ -1,4 +1,4 @@
 #!/bin/bash
 
-#Fix the version to avoid any surprises
-npm install -g serverless@2.60.2
+docker pull maxday/dash:1
+docker run -it maxday/dash:1
