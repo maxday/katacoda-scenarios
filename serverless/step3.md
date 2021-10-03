@@ -2,7 +2,7 @@ We're going to write our Lambda handler code.
 
 First let's import our previously downloaded dependencies
 
-<pre class="file" data-filename="create-urls.js" data-target="replace">
+<pre class="file" data-filename="/root/workshop/create-urls.js" data-target="replace">
 // Import the S3 client
 const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/client-s3");
 
@@ -12,10 +12,10 @@ const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
 // placeholder-handler
 </pre>
 
-Make sure our handler file is open `create-urls.js`{{open}}
+Make sure our handler file is open `/root/workshop/create-urls.js`{{open}}
 
 Then, write the handler function
-<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-handler">
+<pre class="file" data-filename="/root/workshop/create-urls.js" data-target="insert" data-marker="// placeholder-handler">
 // Handler code
 module.exports.handler = async () => {
     // placeholder-environment-variables
@@ -24,7 +24,7 @@ module.exports.handler = async () => {
 
 Both the bucket name and the stage will come from our deployment tool via environment variable, so let's write the code to get those values
 
-<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-environment-variables">
+<pre class="file" data-filename="/root/workshop/create-urls.js" data-target="insert" data-marker="// placeholder-environment-variables">
 // The Serverless framework is responsible to set those environment variables
 const bucket = process.env.BUCKET_NAME;
 const stage = process.env.STAGE;
@@ -39,7 +39,7 @@ if(!bucket || !stage) {
 
 To avoid any conflicts, let's generate a random filename, this will be the location where our file will be uploaded to
 
-<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-create-random-id">
+<pre class="file" data-filename="/root/workshop/create-urls.js" data-target="insert" data-marker="// placeholder-create-random-id">
 // Build a random image name
 const id = Math.floor(Math.random() * 10e16);
 const fileName = `${id}.jpg`;
