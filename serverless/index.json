@@ -74,7 +74,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uisettings": "javascript",
+    "uieditorpath": "/root/example"
   },
   "backend": {
     "imageid": "ubuntu:2004"
