@@ -4,9 +4,6 @@
   "difficulty": "Intermediate",
   "time": "2 hours",
   "details": {
-    "intro": {
-      "text": "intro.md"
-    },
     "assets": {
       "host01": [{
           "file": "upload.sh",
@@ -14,6 +11,9 @@
           "chmod": "+x"
         }
       ]
+    },
+    "intro": {
+      "text": "intro.md"
     },
     "steps": [
       {
