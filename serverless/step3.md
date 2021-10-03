@@ -18,7 +18,7 @@ Then, write the handler function
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-handler">
 // Handler code
 module.exports.handler = async () => {
-    // placeholder-environment-variables
+// placeholder-environment-variables
 };
 </pre>
 

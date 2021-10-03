@@ -1,6 +1,6 @@
 First, let's create our NodeJS project thanks to the `npm` tool.
 
-Start by creating a new folder and change your current location to this newly created folder with `mkdir workshop && cd workshop`{{execute}}
+Start by creating a new folder and change your current location to this newly created folder with `mkdir -p workshop && cd workshop`{{execute}}
 
 Then, bootsrap an empty project, using `npm init --yes`{{execute}}
 
