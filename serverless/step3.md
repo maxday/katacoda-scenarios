@@ -3,7 +3,8 @@ Create a file called `create-urls.js` with `touch create-urls.js`{{execute}}
 
 Then add the following code snippet to this file
 
-```// Import the S3 client
+```
+// Import the S3 client
 const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/client-s3");
 // This will allow us to create an url where we can upload our image
 const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
@@ -65,4 +66,5 @@ module.exports.handler = async () => {
   } catch(e) {
     throw "Impossible to create pre-signed urls";
   }
-};```{{copy}}
+};
+```{{copy}}
