@@ -1,11 +1,18 @@
 Once the `serverless` framework installed, let's write our first deployment file!
 
+This file will describe what we want to deploy. Here we are going to deploy :
+
+* our function
+* an HTTP Gateway to expose our function so it can be reached
+* some IAM policies to access/get our S3 items
+
 <pre class="file" data-filename="serverless.yml" data-target="replace">
 service: serverless-workshop-service
 
 configValidationMode: error
 
 custom:
+  #This will be the bucket where images will be stored
   imageBucketName: serverless-workshop-image
 
 provider:
@@ -16,6 +23,7 @@ provider:
   deploymentBucket:
     name: serverless-workshop-deployment
   environment:
+    # Theses environment variables will be set on our functions
     BUCKET_NAME: ${self:custom.imageBucketName}
     STAGE: ${self:provider.stage}
   iam:
@@ -29,10 +37,12 @@ provider:
           Resource: "arn:aws:s3:::${self:custom.imageBucketName}/*"
 
 functions:
+  # This is the function we've just coded
   create-image-upload-url:
     runtime: nodejs14.x
     name: create-image-upload-url-${self:provider.stage}
     handler: app.handler
+    # This will create a HTTP Gateway so that our function will be easily reachable 
     events:
      - http:
          path: images/uploads
