@@ -25,7 +25,7 @@ module.exports.handler = async () => {
 Both the bucket name and the stage will come from our deployment tool via environment variable, so let's write the code to get those values
 
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-environment-variables">
-    // The Serverless framework is responsible to set those environment variables
+    // The Serverless framework is responsible for setting those environment variables
     const bucket = process.env.BUCKET_NAME;
     const stage = process.env.STAGE;
 
