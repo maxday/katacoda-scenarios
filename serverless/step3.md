@@ -34,7 +34,7 @@ Both the bucket name and the stage will come from our deployment tool via enviro
         throw "BUCKET_NAME and STAGE environment variables could not be found";
     }
 
-    // placeholder-create-random-id
+// placeholder-create-random-id
 </pre>
 
 To avoid any conflicts, let's generate a random filename, this will be the location where our file will be uploaded to
@@ -43,5 +43,66 @@ To avoid any conflicts, let's generate a random filename, this will be the locat
     // Build a random image name
     const id = Math.floor(Math.random() * 10e16);
     const fileName = `${id}.jpg`;
+
+// placeholder-generate-commands
 </pre>
+
+Then let's generate PutObject and GetObjects command to respectively add a document to S3 and retrieve it
+
+<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-generate-commands">
+    const unprocessedOptions = {
+        Bucket: bucket,
+        Key: `${stage}/unprocessed/${fileName}`,
+        ContentType: "image/jpeg",
+    };
+
+    const processedOptions = { ...unprocessedOptions, Key: `${stage}/processed/${fileName}`};
+
+    try {
+
+        // This will create the upload url
+        const command = new PutObjectCommand(unprocessedOptions);
+
+        // This will create urls to get the original + processed image
+        const unprocessedCommand = new GetObjectCommand(unprocessedOptions);
+        const processedCommand = new GetObjectCommand(processedOptions);
+
+// placeholder-s3-client
+</pre>
+
+Then initialize a S3 Client and execute the three commands
+
+<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-s3-client">
+    const client = new S3Client();
+
+    // Get the signed urls
+    const signedUrl = [
+        getSignedUrl(client, command),
+        getSignedUrl(client, unprocessedCommand),
+        getSignedUrl(client, processedCommand)
+    ];
+
+    // Wait for all signedUrl to complete
+    const [uploadUrl, unprocessedUrl, processedUrl] = await Promise.all(signedUrl);
+    
+// placeholder-return
+</pre>
+
+Finally, return the 3 URLs and handle any error
+<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-return">
+    return {
+        statusCode: 202,
+        body: JSON.stringify({
+            uploadUrl,
+            unprocessedUrl,
+            processedUrl
+        })
+    };
+
+} catch(e) {
+    throw "Impossible to create pre-signed urls";
+}
+};
+
+
 
