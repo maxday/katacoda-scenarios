@@ -12,8 +12,6 @@ const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
 // placeholder-handler
 </pre>
 
-Make sure our handler file is open `create-urls.js`{{open}}
-
 Then, write the handler function
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-handler">
 // Handler code
@@ -59,7 +57,6 @@ Then let's generate PutObject and GetObjects command to respectively add a docum
     const processedOptions = { ...unprocessedOptions, Key: `${stage}/processed/${fileName}`};
 
     try {
-
         // This will create the upload url
         const command = new PutObjectCommand(unprocessedOptions);
 
@@ -98,9 +95,11 @@ Finally, return the 3 URLs and handle any error
                 processedUrl
             })
         };
+
     } catch(e) {
         throw "Impossible to create pre-signed urls";
     }
+    
 };
 </pre>
 
