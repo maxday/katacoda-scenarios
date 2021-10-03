@@ -73,36 +73,35 @@ Then let's generate PutObject and GetObjects command to respectively add a docum
 Then initialize a S3 Client and execute the three commands
 
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-s3-client">
-    const client = new S3Client();
+        const client = new S3Client();
 
-    // Get the signed urls
-    const signedUrl = [
-        getSignedUrl(client, command),
-        getSignedUrl(client, unprocessedCommand),
-        getSignedUrl(client, processedCommand)
-    ];
+        // Get the signed urls
+        const signedUrl = [
+            getSignedUrl(client, command),
+            getSignedUrl(client, unprocessedCommand),
+            getSignedUrl(client, processedCommand)
+        ];
 
-    // Wait for all signedUrl to complete
-    const [uploadUrl, unprocessedUrl, processedUrl] = await Promise.all(signedUrl);
+        // Wait for all signedUrl to complete
+        const [uploadUrl, unprocessedUrl, processedUrl] = await Promise.all(signedUrl);
     
 // placeholder-return
 </pre>
 
 Finally, return the 3 URLs and handle any error
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-return">
-    return {
-        statusCode: 202,
-        body: JSON.stringify({
-            uploadUrl,
-            unprocessedUrl,
-            processedUrl
-        })
-    };
-
-} catch(e) {
-    throw "Impossible to create pre-signed urls";
-}
+        return {
+            statusCode: 202,
+            body: JSON.stringify({
+                uploadUrl,
+                unprocessedUrl,
+                processedUrl
+            })
+        };
+    } catch(e) {
+        throw "Impossible to create pre-signed urls";
+    }
 };
-
+</pre>
 
 
