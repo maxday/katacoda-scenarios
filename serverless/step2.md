@@ -1,10 +1,10 @@
 Now that our project is created, let's write our first Lambda function code.
-As a reminder, our first function will be responsible to create three diferents URL.
+As a reminder, this function will be responsible to create three diferent URLs.
 - The first one will be our endpoint to upload an image
 - The second one to view the unprocessed image
 - The third one to view the processed image
 
-Our code will rely on only two dependencies that we are going to install thanks to `npm`
+Our code will rely on two dependencies that we are going to install thanks to `npm`
 
 The first one is the S3 Client SDK provided by AWS. Let's install it with `npm install --save @aws-sdk/client-s3@3.34.0`{{execute}}
 
