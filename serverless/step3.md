@@ -2,7 +2,7 @@ We're going to write our Lambda handler code.
 
 First let's import our previously downloaded dependencies
 
-<pre class="file" data-filename="/root/workshop/create-urls.js" data-target="replace">
+<pre class="file" data-filename="create-urls.js" data-target="replace">
 // Import the S3 client
 const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/client-s3");
 
@@ -12,7 +12,7 @@ const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
 // placeholder-handler
 </pre>
 
-Make sure our handler file is open `/root/workshop/create-urls.js`{{open}}
+Make sure our handler file is open `create-urls.js`{{open}}
 
 Then, write the handler function
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-handler">
