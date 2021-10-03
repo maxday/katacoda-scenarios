@@ -14,8 +14,7 @@
           "chmod": "+x"
         }
       ]
-    }
-  },
+    },
     "steps": [
       {
         "title": "Step 1",
