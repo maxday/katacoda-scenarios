@@ -58,3 +58,4 @@ module.exports.handler = async () => {
         throw "Impossible to create pre-signed urls";
     }
 };
+</pre>
