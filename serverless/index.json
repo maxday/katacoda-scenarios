@@ -76,7 +76,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uisettings": "javascript",
-    "uieditorpath": "/root/example"
+    "uieditorpath": "/root/workshop"
   },
   "backend": {
     "imageid": "ubuntu:2004"
