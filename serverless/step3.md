@@ -99,8 +99,6 @@ Finally, return the 3 URLs and handle any error
     } catch(e) {
         throw "Impossible to create pre-signed urls";
     }
-    
-};
 </pre>
 
 Woot woot! You've just completed coding the first handler function code!

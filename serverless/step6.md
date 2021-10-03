@@ -12,3 +12,5 @@ STAGE="mdavid" // this is only an example, make sure you change it
 Then, deploy with the following command.
 
 `serverless deploy --stage $STAGE`{{execute}}
+
+*(This may take a minute or two)*
