@@ -10,7 +10,7 @@ Download one (or more) of the following images to try our newly deployed service
 
 Then run this script to test posting the image to our service:
 
-./upload.sh "$STAGE" testimage.jpg{{execute}}
+`./upload.sh "$STAGE" testimage.jpg`{{execute}}
 
 Give S3 a few seconds to process, and then open up the URL printed out by the upload script.
 
