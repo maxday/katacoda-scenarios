@@ -3,8 +3,10 @@ We're going to write our Lambda handler code.
 <pre class="file" data-filename="create-urls.js" data-target="replace">
 // Import the S3 client
 const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/client-s3");
+
 // This will allow us to create an url where we can upload our image
 const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
+
 // Handler code
 module.exports.handler = async () => {
     // The Serverless framework is responsible to set those environment variables
