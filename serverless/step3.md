@@ -104,4 +104,7 @@ Finally, return the 3 URLs and handle any error
 };
 </pre>
 
+Woot woot! You've just completed coding the first handler function code!
+Let's go to the next step to see how we can deploy it!
+
 
