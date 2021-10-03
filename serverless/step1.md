@@ -1,5 +1,7 @@
-The first thing we'll do is install the Serverless Framework in our environment.
+First, let's create our NodeJS project thanks to the `npm` tool.
 
-To install, run npm install -g serverless {{execute}}.
+Start by creating a new folder and change your current location to this newly created folder with : `mkdir workshop && cd workshop`{{execute}}
 
-You can verify that Serverless Framework was installed with sls -v {{execute}}.
+Then, bootsrap an empty project, using `npm init --yes`{{execute}}
+
+Great! Our project is now bootstraped, let's go to the next step!
