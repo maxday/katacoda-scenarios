@@ -1,9 +1,6 @@
 We're going to write our Lambda handler code. 
-Create a file called `create-urls.js` with `touch create-urls.js`{{execute}}
 
-Then add the following code snippet to this file
-
-```
+<pre class="file" data-filename="create-urls.js" data-target="replace">
 // Import the S3 client
 const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/client-s3");
 // This will allow us to create an url where we can upload our image
@@ -67,4 +64,3 @@ module.exports.handler = async () => {
     throw "Impossible to create pre-signed urls";
   }
 };
-```{{copy}}
