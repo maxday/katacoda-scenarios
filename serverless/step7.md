@@ -8,7 +8,6 @@ Download one (or more) of the following images to try our newly deployed service
 
 `wget -O testimage.jpg https://i.imgflip.com/gw42w.jpg`{{execute}}
 
-
 Then run this script to test posting the image to our service:
 
 ./upload.sh "$STAGE" testimage.jpg{{execute}}
