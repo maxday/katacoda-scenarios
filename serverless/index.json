@@ -7,6 +7,15 @@
     "intro": {
       "text": "intro.md"
     },
+    "assets": {
+      "host01": [{
+          "file": "upload.sh",
+          "target": "/root/workshop",
+          "chmod": "+x"
+        }
+      ]
+    }
+  },
     "steps": [
       {
         "title": "Step 1",
