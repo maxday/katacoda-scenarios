@@ -2,22 +2,23 @@
 set -e
 
 print_usage () {
-    echo 'Usage: upload.sh <stage> <file>'
+    echo 'Usage: upload.sh <endpoint> <stage> <file>'
 }
 
-if [ "$#" -ne 2 ]; then
+if [ "$#" -ne 3 ]; then
     print_usage
     exit 1
 fi
 
 STAGE="$1"
 FILE="$2"
+ENDPOINT_URL="$3"
 
-ENDPOINT=$(sls info --stage=$STAGE | grep -o "\S*images\/uploads\b" )
 
-echo "Requesting presigned URL from ${ENDPOINT}"
+
+echo "Requesting presigned URL from ${ENDPOINT_URL}"
 echo ""
-SIGNED_RESULT=$( curl -s -d "" "$ENDPOINT" )
+SIGNED_RESULT=$( curl -s -d "" "$ENDPOINT_URL" )
 
 UPLOAD_URL=$( echo $SIGNED_RESULT | jq -r .uploadUrl )
 UNPROCESSED_IMAGE_URL=$( echo $SIGNED_RESULT | jq -r .unprocessedUrl )

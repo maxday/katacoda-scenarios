@@ -14,3 +14,5 @@ Then, deploy with the following command.
 `serverless deploy --stage $STAGE`{{execute}}
 
 *(This may take a minute or two)*
+
+Finally, let's save the endpoint URL as we will it later `export ENDPOINT=$(sls info --stage=$STAGE | grep -o "\S*images\/uploads\b" )`{{execute}}
