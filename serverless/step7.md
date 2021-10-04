@@ -1,17 +1,16 @@
-Let's test our first verison of the app!
+Let's now execute our first deployment!
 
-Download one (or more) of the following images to try our newly deployed service!
+In this lab we are all pushing code to the same AWS account. We will keep our code separate by assigning a unique stage to our functions. We can do this by setting an environment variable.
 
-`wget -O testimage.jpg https://i.imgflip.com/6r6yw.jpg`{{execute}}
+Create an environment variable called STAGE as shown in the example below and set it to the first letter of your first name followed by your last name.
 
-`wget -O testimage.jpg https://i.imgflip.com/5ditf.jpg`{{execute}}
+```
+# use the first letter of your first name followed by your last name
+STAGE="mdavid" // this is only an example, make sure you change it
+```
 
-`wget -O testimage.jpg https://i.imgflip.com/gw42w.jpg`{{execute}}
+Then, deploy with the following command.
 
-Then run this script to test posting the image to our service:
+`serverless deploy --stage $STAGE`{{execute}}
 
-`./upload.sh "$STAGE" testimage.jpg`{{execute}}
-
-Give S3 a few seconds to process, and then open up the URL printed out by the upload script.
-
-*Note that the processed URL is not yet available since you didn't build the second part yet*
+*(This may take a minute or two)*
