@@ -9,6 +9,8 @@ const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/clien
 // This will allow us to create an url where we can upload our image
 const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
 
+// placeholder-import-custom-metric
+
 // placeholder-handler
 </pre>
 
@@ -41,6 +43,7 @@ To avoid any conflicts, let's generate a random filename, this will be the locat
     // Build a random image name
     const id = Math.floor(Math.random() * 10e16);
     const fileName = `${id}.jpg`;
+    console.log(`Generated filename : ${filename}`);
 
 // placeholder-generate-commands
 </pre>
@@ -81,7 +84,9 @@ Then initialize a S3 Client and execute the three commands
 
         // Wait for all signedUrl to complete
         const [uploadUrl, unprocessedUrl, processedUrl] = await Promise.all(signedUrl);
-    
+
+        // placeholder-send-custom-metric
+
 // placeholder-return
 </pre>
 

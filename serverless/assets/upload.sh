@@ -10,11 +10,9 @@ if [ "$#" -ne 3 ]; then
     exit 1
 fi
 
-STAGE="$1"
-FILE="$2"
-ENDPOINT_URL="$3"
-
-
+ENDPOINT_URL="$1"
+STAGE="$2"
+FILE="$3"
 
 echo "Requesting presigned URL from ${ENDPOINT_URL}"
 echo ""
