@@ -31,10 +31,10 @@ echo "--"
 curl -s -X PUT -H "Content-Type: image/jpeg" --upload-file ${FILE} $UPLOAD_URL
 
 echo "Public unprocessed image URL: "
-echo "--"
+echo ""
 echo ${UNPROCESSED_IMAGE_URL}
 echo "--"
 echo "Public processed image URL: "
-echo "--"
+echo ""
 echo ${PROCESSED_IMAGE_URL}
 echo "--"

@@ -41,7 +41,7 @@ functions:
   create-image-upload-url:
     runtime: nodejs14.x
     name: create-image-upload-url-${self:provider.stage}
-    handler: app.handler
+    handler: create-urls.handler
     # This will create a HTTP Gateway so that our function will be easily reachable 
     events:
      - http:
