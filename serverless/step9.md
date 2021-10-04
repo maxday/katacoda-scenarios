@@ -4,4 +4,4 @@ Let's use the Datadog CLI tool to auto-instrument our service.
 
 First let's install the tool with `npm install -g @datadog/datadog-ci@0.17.5`{{execute}}
 
-Then we can instrument our service with : `datadog-ci lambda instrument --function create-image-upload-url-$STAGE -r us-east-1`{{execute}}
+Then we can instrument our service with : `datadog-ci lambda instrument --function create-image-upload-url-$STAGE -r us-east-1 --extensionVersion 11 --layerVersion 63`{{execute}}
