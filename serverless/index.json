@@ -13,7 +13,7 @@
 		},
 		"intro": {
 			"text": "intro.md",
-			"code": "setup.sh"
+			"code": "source setup.sh"
     },
 		"steps": [{
 				"title": "Step 1",
