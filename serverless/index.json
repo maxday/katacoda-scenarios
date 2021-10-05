@@ -11,7 +11,7 @@
 				"chmod": "+x"
 			},{
 				"file": "setupLab.sh",
-				"target": "/root",
+				"target": "/usr/local/bin",
 				"chmod": "+x"
 			}]
 		},
