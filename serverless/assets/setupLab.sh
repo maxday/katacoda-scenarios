@@ -1,6 +1,8 @@
 #!/bin/bash
 
-read -p "Please type the first name of your first name + last name \n For instance my name is Maxime David so I'll type mdavid : " stageName
+echo "Please type the first name of your first name + last name"
+echo "For instance my name is Maxime David so I'll type : mdavid"
+read -p  "Input : " stageName
 
 export STAGE=$stageName
 
