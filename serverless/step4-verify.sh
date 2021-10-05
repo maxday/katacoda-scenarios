@@ -4,7 +4,7 @@ if [ -f "/usr/bin/jest" ]; then
     if [ "$?" -ne 0 ]; then
         exit 1
     else
-        exit 0
+        echo "done"
     fi
 else 
     exit 1
