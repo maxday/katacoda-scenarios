@@ -1,1 +1,1 @@
-echo "OK"
+[ -z "${STAGE}" ] || echo "Done"
