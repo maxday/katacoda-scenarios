@@ -12,8 +12,9 @@
 			}]
 		},
 		"intro": {
-			"text": "intro.md"
-		},
+			"text": "intro.md",
+			"courseData": "setup.sh"
+    },
 		"steps": [{
 				"title": "Step 1",
 				"text": "step1.md"
