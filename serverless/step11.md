@@ -15,4 +15,3 @@ sendDistributionMetric(
     `bucket:${bucket},my_custom_tag:some_value`,    // Metric tag
 );
 </pre>
-

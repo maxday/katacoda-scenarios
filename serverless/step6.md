@@ -23,9 +23,10 @@ provider:
   deploymentBucket:
     name: serverless-workshop-deployment
   environment:
-    # Theses environment variables will be set on our functions
+    # These environment variables will be set on our functions
     BUCKET_NAME: ${self:custom.imageBucketName}
     STAGE: ${self:provider.stage}
+    
   iam:
     role:
       statements:
@@ -37,14 +38,14 @@ provider:
           Resource: "arn:aws:s3:::${self:custom.imageBucketName}/*"
 
 functions:
-  # This is the function we've just coded
   create-image-upload-url:
     runtime: nodejs14.x
     name: create-image-upload-url-${self:provider.stage}
     handler: create-urls.handler
-    # This will create a HTTP Gateway so that our function will be easily reachable 
     events:
+    # This will create a HTTP Gateway so that our function will be easily reachable 
      - http:
          path: images/uploads
          method: post
+  # placeholder-second-function
 </pre>

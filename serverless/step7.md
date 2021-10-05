@@ -10,9 +10,12 @@ STAGE="mdavid" // this is only an example, make sure you change it
 ```
 
 Then, deploy with the following command.
-
 `serverless deploy --stage $STAGE`{{execute}}
 
 *(This may take a minute or two)*
 
-Finally, let's save the endpoint URL as we will it later `export ENDPOINT=$(sls info --stage=$STAGE | grep -o "\S*images\/uploads\b" )`{{execute}}
+Finally, let's save the endpoint URL as we will it later 
+`source saveEndpoint.sh`{{execute}}
+
+You can see your endpoint with 
+`echo $ENDPOINT`{{execute}}
