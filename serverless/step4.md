@@ -5,7 +5,8 @@ We often hear that it's not possible or quite difficult to unit test serverless 
 We are going to use the `jest` framework to write and run our unit tests, so let's install it now with `npm install -g jest@27.2.4`{{execute}}
 
 You can now try to run the tests with `jest`{{execute}}
-Of course this will fail since we don't have any tests yet.
+
+*Of course this will fail since we don't have any tests yet.*
 
 So let's create our first test suite which will be run against our previously writen function
 <pre class="file" data-filename="create-urls.spec.js" data-target="replace">
