@@ -1,6 +1,6 @@
 Let's test our first verison of the app!
 
-Download one (or more) of the following images to try our newly deployed service!
+Download a sample image to try our newly deployed service!
 
 `wget -O testimage.jpg https://i.imgflip.com/gw42w.jpg`{{execute}}
 

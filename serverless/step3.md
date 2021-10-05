@@ -43,7 +43,7 @@ To avoid any conflicts, let's generate a random filename, this will be the locat
     // Build a random image name
     const id = Math.floor(Math.random() * 10e16);
     const fileName = `${id}.jpg`;
-    console.log(`Generated filename : ${filename}`);
+    console.log(`Generated filename : ${fileName}`);
 
 // placeholder-generate-commands
 </pre>

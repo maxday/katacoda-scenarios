@@ -37,3 +37,5 @@ echo "Public processed image URL: "
 echo ""
 echo ${PROCESSED_IMAGE_URL}
 echo "--"
+
+touch /tmp/uploadOK

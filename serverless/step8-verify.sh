@@ -1,0 +1,1 @@
+[ -f /root/workshop/testimage.jpg -a -f /tmp/uploadOK ] && echo "done"
