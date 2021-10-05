@@ -85,7 +85,7 @@ Then initialize a S3 Client and execute the three commands
         // Wait for all signedUrl to complete
         const [uploadUrl, unprocessedUrl, processedUrl] = await Promise.all(signedUrl);
 
-        // placeholder-send-custom-metric
+// placeholder-send-custom-metric
 
 // placeholder-return
 </pre>
