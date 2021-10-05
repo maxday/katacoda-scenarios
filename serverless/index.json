@@ -9,13 +9,21 @@
 				"file": "upload.sh",
 				"target": "/root/workshop",
 				"chmod": "+x"
+			},{
+				"file": "setup.sh",
+				"target": "/root",
+				"chmod": "+x"
 			}]
 		},
 		"intro": {
-			"text": "intro.md",
-			"code": "source setup.sh"
+			"text": "intro.md"
     },
-		"steps": [{
+		"steps": [
+      {
+				"title": "Step 0",
+				"text": "step0.md"
+			},
+      {
 				"title": "Step 1",
 				"text": "step1.md"
 			},

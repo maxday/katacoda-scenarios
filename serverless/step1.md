@@ -1,8 +1,6 @@
 First, let's create our NodeJS project thanks to the `npm` tool.
 
-Start by creating a new folder and change your current location to this newly created folder with `mkdir -p workshop && cd workshop`{{execute}}
-
-Then, bootsrap an empty project, using `npm init --yes`{{execute}}
+Start by creating by bootsrap an empty project, using `npm init --yes`{{execute}}
 
 You can verify that a `package.json` has been generated listing all files in the current folder with `ls`{{execute}}
 
