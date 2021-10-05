@@ -12,7 +12,7 @@ service: serverless-workshop-service
 configValidationMode: error
 
 custom:
-  #This will be the bucket where images will be stored
+  #This is the bucket where images will be stored
   imageBucketName: serverless-workshop-image
 
 provider:

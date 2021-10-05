@@ -2,17 +2,16 @@
 set -e
 
 print_usage () {
-    echo 'Usage: upload.sh <endpoint> <stage> <file>'
+    echo 'Usage: upload.sh <endpoint> <file>'
 }
 
-if [ "$#" -ne 3 ]; then
+if [ "$#" -ne 2 ]; then
     print_usage
     exit 1
 fi
 
 ENDPOINT_URL="$1"
-STAGE="$2"
-FILE="$3"
+FILE="$2"
 
 echo "Requesting presigned URL from ${ENDPOINT_URL}"
 echo ""

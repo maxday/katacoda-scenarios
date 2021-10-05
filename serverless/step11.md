@@ -9,9 +9,9 @@ const sendDistributionMetric = require("datadog-lambda-js").sendDistributionMetr
 
 Then let's send the metric
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-send-custom-metric">
-sendDistributionMetric(
-    "create_urls.request",                          // Metric name
-    1,                                              // Metric value
-    `bucket:${bucket},my_custom_tag:some_value`,    // Metric tag
-);
+    sendDistributionMetric(
+        "create_urls.request",                          // Metric name
+        1,                                              // Metric value
+        `bucket:${bucket},my_custom_tag:some_value`,    // Metric tag
+    );
 </pre>
