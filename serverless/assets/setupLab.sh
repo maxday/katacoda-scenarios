@@ -15,3 +15,4 @@ export DATADOG_API_KEY=$( echo $RESULT | jq -r .apiKey )
 echo "All good! The stage has been set up to $STAGE, you can go to the next step"
 
 mkdir -p /root/workshop && cd /root/workshop
+touch /tmp/step0OK

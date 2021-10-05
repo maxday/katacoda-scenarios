@@ -1,1 +1,1 @@
-[ -z "${STAGE}" ] || echo "Done"
+[ -f /tmp/step0OK ] && echo "done"
