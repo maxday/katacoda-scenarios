@@ -10,7 +10,7 @@
 				"target": "/root/workshop",
 				"chmod": "+x"
 			},{
-				"file": "setup.sh",
+				"file": "setupLab.sh",
 				"target": "/root",
 				"chmod": "+x"
 			}]
