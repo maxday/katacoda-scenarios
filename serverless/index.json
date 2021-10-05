@@ -40,7 +40,8 @@
 			},
 			{
 				"title": "Step 4",
-				"text": "step4.md"
+				"text": "step4.md",
+        "verify": "step4-verify.sh"
 			},
       {
 				"title": "Step 5",
