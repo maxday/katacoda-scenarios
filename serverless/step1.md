@@ -1,7 +1,4 @@
-First, let's create our NodeJS project thanks to the `npm` tool.
+In this lab we are all pushing code to the same AWS account. We will keep our code separate by assigning a unique stage to our functions.
 
-Start by creating by bootsrap an empty project, using `npm init --yes`{{execute}}
-
-You can verify that a `package.json` has been generated listing all files in the current folder with `ls`{{execute}}
-
-Great! Our project is now bootstraped, let's go to the next step!
+We will use the first letter of your first name + your last name to do so.
+Let's run this command to get started! `source setupLab.sh`{{execute}}

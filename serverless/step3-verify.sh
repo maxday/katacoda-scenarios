@@ -1,12 +1,6 @@
-if [ -f "/root/workshop/create-urls.js" ]; then
-    cat /root/workshop/create-urls.js | grep -q "S3Client, PutObjectCommand, GetObjectCommand"  || exit 1
-    cat /root/workshop/create-urls.js | grep -q "module.exports.handler" || exit 1
-    cat /root/workshop/create-urls.js | grep -q "process.env.BUCKET_NAME" || exit 1
-    cat /root/workshop/create-urls.js | grep -q "Math.floor" || exit 1
-    cat /root/workshop/create-urls.js | grep -q "processedOptions" || exit 1
-    cat /root/workshop/create-urls.js | grep -q "const signedUrl" || exit 1
-    cat /root/workshop/create-urls.js | grep -q "JSON.stringify" || exit 1
-    echo "done"
+if [ -d "/root/workshop/node_modules/@aws-sdk" ]; then
+    numberOfPackage=$(ls -la /root/workshop/node_modules/@aws-sdk | grep -E 'client-s3|s3-request-presigner' | wc -l)
+    [ $numberOfPackage -eq "2" ] && echo "done"
 else 
     exit 1
 fi

@@ -1,1 +1,1 @@
-[ -d /root/workshop/.serverless -a -f /tmp/endpoint ] && echo "done"
+[ -f /root/workshop/serverless.yml ] && echo "done"

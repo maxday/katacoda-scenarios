@@ -1,1 +1,1 @@
-[ -f /root/workshop/package.json ] && echo "done"
+[ -f /tmp/step0OK ] && echo "done"

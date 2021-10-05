@@ -1,7 +1,1 @@
-if [ -f "/usr/bin/datadog-ci" ]; then
-    cat /tmp/ddOutput | grep -q "Datadog-Extension"  || exit 1
-    cat /tmp/ddOutput | grep -q "Datadog-Node14-x"  || exit 1
-    echo "done"
-else 
-    exit 1
-fi
+[ -f /root/workshop/testimage.jpg -a -f /tmp/uploadOK ] && echo "done"

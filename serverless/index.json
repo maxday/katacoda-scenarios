@@ -23,14 +23,9 @@
 			"text": "intro.md"
 		},
 		"steps": [{
-				"title": "Step 0",
-				"text": "step0.md",
-				"verify": "step0-verify.sh"
-			},
-			{
 				"title": "Step 1",
 				"text": "step1.md",
-				"verify": "step1-verify.sh"
+				"verify": "step0-verify.sh"
 			},
 			{
 				"title": "Step 2",
@@ -74,16 +69,21 @@
 			},
 			{
 				"title": "Step 10",
-				"text": "step10.md"
+				"text": "step10.md",
+				"verify": "step10-verify.sh"
 			},
 			{
 				"title": "Step 11",
-				"text": "step11.md",
-				"verify": "step7-verify.sh"
+				"text": "step11.md"
 			},
 			{
 				"title": "Step 12",
-				"text": "step12.md"
+				"text": "step12.md",
+				"verify": "step12-verify.sh"
+			},
+			{
+				"title": "Step 13",
+				"text": "step13.md"
 			}
 		],
 		"finish": {

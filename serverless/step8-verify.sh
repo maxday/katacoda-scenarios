@@ -1,1 +1,1 @@
-[ -f /root/workshop/testimage.jpg -a -f /tmp/uploadOK ] && echo "done"
+[ -d /root/workshop/.serverless -a -f /tmp/endpoint ] && echo "done"

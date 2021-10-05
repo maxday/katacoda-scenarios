@@ -1,1 +1,1 @@
-serverless --version && echo "done"
+[ -f /usr/bin/jest -a -d /root/workshop/coverage ] && echo "done"

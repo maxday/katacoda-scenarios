@@ -1,1 +1,1 @@
-[ -f /root/workshop/serverless.yml ] && echo "done"
+serverless --version && echo "done"
