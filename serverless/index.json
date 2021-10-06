@@ -30,39 +30,48 @@
 		},
 		"steps": [{
 				"title": "Step 1",
-				"text": "step1.md"
+				"text": "step1.md",
+				"verify": "step1-verify.sh"
 			},
 			{
 				"title": "Step 2",
-				"text": "step2.md"
+				"text": "step2.md",
+				"verify": "step2-verify.sh"
 			},
 			{
 				"title": "Step 3",
-				"text": "step3.md"
+				"text": "step3.md",
+				"verify": "step3-verify.sh"
 			},
 			{
 				"title": "Step 4",
-				"text": "step4.md"
+				"text": "step4.md",
+				"verify": "step4-verify.sh"
 			},
 			{
 				"title": "Step 5",
-				"text": "step5.md"
+				"text": "step5.md",
+				"verify": "step5-verify.sh"
 			},
 			{
 				"title": "Step 6",
-				"text": "step6.md"
+				"text": "step6.md",
+				"verify": "step6-verify.sh"
 			},
 			{
 				"title": "Step 7",
-				"text": "step7.md"
+				"text": "step7.md",
+				"verify": "step7-verify.sh"
 			},
 			{
 				"title": "Step 8",
-				"text": "step8.md"
+				"text": "step8.md",
+				"verify": "step8-verify.sh"
 			},
 			{
 				"title": "Step 9",
-				"text": "step9.md"
+				"text": "step9.md",
+				"verify": "step9-verify.sh"
 			},
 			{
 				"title": "Step 10",
@@ -70,7 +79,8 @@
 			},
 			{
 				"title": "Step 11",
-				"text": "step11.md"
+				"text": "step11.md",
+				"verify": "step11-verify.sh"
 			},
 			{
 				"title": "Step 12",
@@ -82,7 +92,8 @@
 			},
 			{
 				"title": "Step 14",
-				"text": "step14.md"
+				"text": "step14.md",
+				"verify": "step14-verify.sh"
 			},
 			{
 				"title": "Step 15",
@@ -90,19 +101,23 @@
 			},
 			{
 				"title": "Step 16",
-				"text": "step16.md"
+				"text": "step16.md",
+				"verify": "step16-verify.sh"
 			},
 			{
 				"title": "Step 17",
-				"text": "step17.md"
+				"text": "step17.md",
+				"verify": "step17-verify.sh"
 			},
 			{
 				"title": "Step 18",
-				"text": "step18.md"
+				"text": "step18.md",
+				"verify": "step18-verify.sh"
 			},
 			{
 				"title": "Step 19",
-				"text": "step19.md"
+				"text": "step19.md",
+				"verify": "step19-verify.sh"
 			},
 			{
 				"title": "Step 20",
