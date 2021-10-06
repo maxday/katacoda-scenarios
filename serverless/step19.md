@@ -7,6 +7,7 @@ Don't forget to instrument our new function with `Datadog CLI`
 `datadog-ci lambda instrument --function process-image-$STAGE -r us-east-1 --extensionVersion 11 --layerVersion 63 --service $STAGE | tee /tmp/ddOutput2`{{execute}}
 
 Now re-run the script to upload a picture and this time, you should be able to see the processed image.
+
 Open the link displayed in `Public processed image URL`
 `upload.sh "$ENDPOINT" testimage.jpg`{{execute}}
 
