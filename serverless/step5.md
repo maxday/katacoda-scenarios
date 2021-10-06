@@ -38,6 +38,8 @@ describe("handler", () => {
 });
 </pre>
 
-Let's try again our jest command : `jest`{{execute}}
+Let's try again our jest command : 
+`jest`{{execute}}
 
-Great our tests are passing, you can also the test with the coverage option to verify that every statements have been tested `jest --coverage`{{execute}}
+Great our tests are passing, you can also the test with the coverage option to verify that every statements have been tested 
+`jest --coverage`{{execute}}

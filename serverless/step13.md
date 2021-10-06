@@ -1,13 +1,17 @@
-Now that our custom metric is here, let's redeploy our service using the `serverless` framework once again
-`serverless deploy --stage $stage`{{execute}}
+We just saw that Datadog provides out-of-the-box some useful metrics.
 
-Now let's simulate again some traffic by calling 3 times our function
-`for i in {1..3}; do ./upload.sh "$ENDPOINT" "$STAGE" testimage.jpg; done`{{execute}}
+It's also possible to send custom metrics, let's add one when the urls are generated.
 
-Finally let's go the Datadog UI and search for your metric : 
+First we need to import the Datadog Library (no need to install it as the Datadog CLI tools is taking care of it)
+<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-import-custom-metric">
+const sendDistributionMetric = require("datadog-lambda-js").sendDistributionMetric;
+</pre>
 
-[Go to Metrics Explorer](https://app.datadoghq.com/metric/explorer)
-
-1. Make sure you select a large enough time span (like 1 hour)
-2. In `graph` enter the name of your metric which is `create_urls.request`
-3. You should see some data points corresponding to your invocations
+Then let's send the metric
+<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-send-custom-metric">
+        sendDistributionMetric(
+            "create_urls.request",                          // Metric name
+            1,                                              // Metric value
+            `bucket:${bucket},my_custom_tag:some_value`,    // Metric tag
+        );
+</pre>

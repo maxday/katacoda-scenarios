@@ -69,21 +69,25 @@
 			},
 			{
 				"title": "Step 10",
-				"text": "step10.md",
-				"verify": "step10-verify.sh"
+				"text": "step10.md"
 			},
 			{
 				"title": "Step 11",
-				"text": "step11.md"
+				"text": "step11.md",
+				"verify": "step11-verify.sh"
 			},
 			{
 				"title": "Step 12",
-				"text": "step12.md",
-				"verify": "step12-verify.sh"
+				"text": "step12.md"
 			},
 			{
 				"title": "Step 13",
-				"text": "step13.md"
+				"text": "step13.md",
+				"verify": "step13-verify.sh"
+			},
+			{
+				"title": "Step 14",
+				"text": "step14.md"
 			}
 		],
 		"finish": {

@@ -1,17 +1,15 @@
-We just saw that Datadog provides out-of-the-box some useful metrics.
+Let's sign in !
 
-It's also possible to send custom metrics, let's add one when the urls are generated.
+[Sign into Datadog](https://app.datadoghq.com/account/login).
 
-First we need to import the Datadog Library (no need to install it as the Datadog CLI tools is taking care of it)
-<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-import-custom-metric">
-const sendDistributionMetric = require("datadog-lambda-js").sendDistributionMetric;
-</pre>
+Then, select APM > Traces on the left menu
 
-Then let's send the metric
-<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-send-custom-metric">
-        sendDistributionMetric(
-            "create_urls.request",                          // Metric name
-            1,                                              // Metric value
-            `bucket:${bucket},my_custom_tag:some_value`,    // Metric tag
-        );
-</pre>
+Remember, in this workshop we are all using the same AWS account, so your application in the only one which shows up in Datadog (like it will be the case in a real production environment).
+
+As we have tagged our service with `first letter of firstname + lastname` you can filter those traces with `@service:XXX` for instance `@service:mdavid`
+
+*Make sure you select a correct time span on the top right hand corner (1 hour for instance)*
+
+You can apply a lot of different filter, for instance you can apply `@coldstart:true` to see only the invocations from a cold start
+
+Feel to free to apply different filters!
