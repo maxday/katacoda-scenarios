@@ -7,7 +7,7 @@
 		"assets": {
 			"host01": [{
 				"file": "upload.sh",
-				"target": "/root/workshop",
+				"target": "/usr/local/bin",
 				"chmod": "+x"
 			}, {
 				"file": "setupLab.sh",
