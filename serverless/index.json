@@ -82,12 +82,15 @@
 			},
 			{
 				"title": "Step 13",
-				"text": "step13.md",
-				"verify": "step13-verify.sh"
+				"text": "step13.md"
 			},
 			{
 				"title": "Step 14",
-				"text": "step14.md"
+				"text": "step14-verify.md"
+			},
+			{
+				"title": "Step 15",
+				"text": "step15.md"
 			}
 		],
 		"finish": {

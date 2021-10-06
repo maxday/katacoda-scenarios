@@ -1,5 +1,7 @@
 Once the `serverless` framework installed, let's write our first deployment file!
 
+*Once again, in this step, you don't need to write any code, make sure you understand the code, then click on `Copy to editor` on the following code snippet* 
+
 This file will describe what we want to deploy. Here we are going to deploy :
 
 * our function

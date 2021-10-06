@@ -1,5 +1,7 @@
 We're going to write our Lambda handler code. 
 
+*In this step, you don't need to write any code, make sure you understand the code, then click on `Copy to editor` on each of the following code snippets* 
+
 First let's import our previously downloaded dependencies
 
 <pre class="file" data-filename="create-urls.js" data-target="replace">
@@ -13,6 +15,9 @@ const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
 
 // placeholder-handler
 </pre>
+
+Make sure the newly created file is open with  
+`/root/workshop/create-urls.js`{{open}}
 
 Then, write the handler function
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-handler">
@@ -47,6 +52,8 @@ To avoid any conflicts, let's generate a random filename, this will be the locat
 
 // placeholder-generate-commands
 </pre>
+
+*Here we've added a custom log line to output the generated filename, we will be able to see this log in the Datadog UI later in the workshop*
 
 Then let's generate PutObject and GetObjects command to respectively add a document to S3 and retrieve it
 
@@ -107,6 +114,7 @@ Finally, return the 3 URLs and handle any error
 </pre>
 
 Woot woot! You've just completed coding the first handler function code!
+
 Let's go to the next step to see how we can deploy it!
 
 

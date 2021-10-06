@@ -1,17 +1,24 @@
-We just saw that Datadog provides out-of-the-box some useful metrics.
+Datadog also generates out the box some `enhanced metrics` such as :
+- init duration (for cold starts)
+- duration
+- max_memory_used
+- billed_duration
+- and more.
 
-It's also possible to send custom metrics, let's add one when the urls are generated.
+Let's have a look at those metrics!
 
-First we need to import the Datadog Library (no need to install it as the Datadog CLI tools is taking care of it)
-<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-import-custom-metric">
-const sendDistributionMetric = require("datadog-lambda-js").sendDistributionMetric;
-</pre>
+1. Go to `Metrics` > `Explorer` on the left sidebar.
 
-Then let's send the metric
-<pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-send-custom-metric">
-        sendDistributionMetric(
-            "create_urls.request",                          // Metric name
-            1,                                              // Metric value
-            `bucket:${bucket},my_custom_tag:some_value`,    // Metric tag
-        );
-</pre>
+1. Select a valid timespan on the top right hand corner (like 1 hour)
+
+1. In `Graph:` type `aws.lambda.enhanced.duration` + `enter` to see a graph
+
+1. This graph shows the timeserie of this metric for `all` lambda functions, you can add a tag in the `Over:` section with your service name (for instance : `service:mdavid`)
+
+Feel free to add more tags or to try other metrics such as : 
+
+* aws.lambda.enhanced.max_memory_used
+* aws.lambda.enhanced.invocations
+
+
+
