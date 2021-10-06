@@ -6,6 +6,6 @@ Download a sample image to try our newly deployed service with
 Then run this script to test posting the image to our service  
 `upload.sh "$ENDPOINT" testimage.jpg`{{execute}}
 
-Open up the URL printed out by the upload script, you should see a beautiful cat!
+Open up the URL printed under `Public unprocessed image URL`, you should see a beautiful cat!
 
 *Note that the processed URL is not yet available since you didn't build the second part yet*
