@@ -1,4 +1,4 @@
-Now that our first function is coded, let's deploy it!
+Now that our first function is written and correctly tested, let's deploy it!
 
 We are going to use the `serverless` framework to do so.
 

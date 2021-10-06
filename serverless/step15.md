@@ -1,8 +1,8 @@
 Now that our custom metric is here, let's redeploy our service using the `serverless` framework once again  
-`serverless deploy --stage $stage`{{execute}}
+`serverless deploy --stage $STAGE`{{execute}}
 
 Now let's simulate again some traffic by calling 3 times our function  
-`for i in {1..3}; do ./upload.sh "$ENDPOINT" "$STAGE" testimage.jpg; done`{{execute}}
+`for i in {1..3}; do upload.sh "$ENDPOINT" testimage.jpg; done`{{execute}}
 
 Go back to the Datadog UI
 

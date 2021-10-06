@@ -1,5 +1,7 @@
 As we are here to build an service as production-ready as possible let's right some unit tests to ensure that our function is valid.
 
+*Once again, in this step, you don't need to write any code, make sure you understand the code, then click on `Copy to editor` on the following code snippet* 
+
 We often hear that it's not possible or quite difficult to unit test serverless application. We will see that that's not correct here.
 
 We are going to use the `jest` framework to write and run our unit tests, so let's install it now with  

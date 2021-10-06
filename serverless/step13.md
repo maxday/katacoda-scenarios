@@ -1,8 +1,8 @@
 Datadog also generates out the box some `enhanced metrics` such as :
 - init duration (for cold starts)
 - duration
-- max_memory_used
-- billed_duration
+- max memory used
+- billed duration
 - and more.
 
 Let's have a look at those metrics!
@@ -17,8 +17,8 @@ Let's have a look at those metrics!
 
 Feel free to add more tags or to try other metrics such as : 
 
-* aws.lambda.enhanced.max_memory_used
-* aws.lambda.enhanced.invocations
+* `aws.lambda.enhanced.max_memory_used`
+* `aws.lambda.enhanced.invocations`
 
 
 

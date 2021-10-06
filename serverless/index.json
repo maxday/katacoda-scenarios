@@ -17,6 +17,12 @@
 				"file": "saveEndpoint.sh",
 				"target": "/usr/local/bin",
 				"chmod": "+x"
+			},{
+				"file": "img.jpeg",
+				"target": "/tmp"
+			},{
+				"file": "processed_img.jpeg",
+				"target": "/tmp"
 			}]
 		},
 		"intro": {
@@ -92,6 +98,25 @@
 			{
 				"title": "Step 15",
 				"text": "step15.md"
+			},
+			{
+				"title": "Step 16",
+				"text": "step16.md",
+				"verify": "step16-verify.sh"
+			},
+			{
+				"title": "Step 17",
+				"text": "step17.md",
+				"verify": "step17-verify.sh"
+			},
+			{
+				"title": "Step 18",
+				"text": "step18.md",
+				"verify": "step18-verify.sh"
+			},
+			{
+				"title": "Step 19",
+				"text": "step19.md"
 			}
 		],
 		"finish": {
