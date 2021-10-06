@@ -129,3 +129,7 @@ describe("processImage", () => {
         await expect(processImage(null)).rejects.toEqual('Impossible to process the image');
     });
 });
+</pre>
+
+Make sure all test are passing and the coverage is still at 100% with    
+`jest --coverage`{{execute}}

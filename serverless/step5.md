@@ -17,6 +17,8 @@ So let's create our first test suite which will be run against our previously wr
 <pre class="file" data-filename="create-urls.spec.js" data-target="replace">
 const handler = require('./create-urls').handler;
 
+// placeholder-adjust-test
+
 jest.mock("@aws-sdk/s3-request-presigner");
 const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
 
