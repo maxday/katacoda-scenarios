@@ -28,4 +28,4 @@ jest.mock("datadog-lambda-js");
 </pre>
 
 Make sure our tests are still passing with  
-`jest`{{coverage}}
+`jest --coverage`{{execute}}

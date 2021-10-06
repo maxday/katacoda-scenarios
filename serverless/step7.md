@@ -49,5 +49,5 @@ functions:
      - http:
          path: images/uploads
          method: post
-  # placeholder-second-function
+# placeholder-second-function
 </pre>

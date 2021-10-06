@@ -6,7 +6,8 @@ First let's install the tool with
 `npm install -g @datadog/datadog-ci@0.17.5`{{execute}}
 
 
-Then we can instrument our service with : `datadog-ci lambda instrument --function create-image-upload-url-$STAGE -r us-east-1 --extensionVersion 11 --layerVersion 63 --service $STAGE | tee /tmp/ddOutput`{{execute}}
+Then we can instrument our service with :  
+`datadog-ci lambda instrument --function create-image-upload-url-$STAGE -r us-east-1 --extensionVersion 11 --layerVersion 63 --service $STAGE | tee /tmp/ddOutput`{{execute}}
 
 *Note that we are tagging the service with your name to access filter features later in the workshop*
 
