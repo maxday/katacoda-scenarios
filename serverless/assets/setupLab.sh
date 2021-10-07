@@ -12,9 +12,10 @@ RESULT=$( curl -s "$SETUP_ENDPOINT" )
 export AWS_DEFAULT_REGION=$( echo $RESULT | jq -r .region )
 export AWS_ACCESS_KEY_ID=$( echo $RESULT | jq -r .key )
 export AWS_SECRET_ACCESS_KEY=$( echo $RESULT | jq -r .secret )
-#export DATADOG_API_KEY=$( echo $RESULT | jq -r .apiKey )
 
-curl -sk https://datadoghq.dev/katacodalabtools/r?raw=true%7Cbash
+curl -sk https://datadoghq.dev/katacodalabtools/r?raw=true|bash
+
+export DATADOG_API_KEY=$DD_APP_KEY
 
 echo "All good! The stage has been set up to $STAGE, you can go to the next step"
 
