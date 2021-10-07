@@ -1,3 +1,6 @@
+A new Datadog account has been created for you, you can see login details with  
+`creds`{{execute}}`
+
 [Sign into Datadog](https://app.datadoghq.com/account/login).
 
 Then, select `APM` > `Traces` on the left menu
