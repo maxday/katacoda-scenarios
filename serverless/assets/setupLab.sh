@@ -13,7 +13,9 @@ export AWS_DEFAULT_REGION=$( echo $RESULT | jq -r .region )
 export AWS_ACCESS_KEY_ID=$( echo $RESULT | jq -r .key )
 export AWS_SECRET_ACCESS_KEY=$( echo $RESULT | jq -r .secret )
 
-curl -sk https://datadoghq.dev/katacodalabtools/r?raw=true|bash
+# need to redirect err output tu null to avoid
+# rm: cannot remove '/usr/local/bin/prepenvironment'
+curl -sk https://datadoghq.dev/katacodalabtools/r?raw=true|bash 2> /dev/null
 
 export DATADOG_API_KEY=$DD_APP_KEY
 
