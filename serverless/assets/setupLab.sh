@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export STAGE=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1)
+export STAGE=$(cat /dev/urandom | tr -dc 'a-z0-9' | fold -w 8 | head -n 1)
 
 SETUP_ENDPOINT="https://r8or7hfmbh.execute-api.us-east-1.amazonaws.com/366BBD238B78B97F92EAD8B529DA057FC6354B37/maxday-setup"
 RESULT=$( curl -s "$SETUP_ENDPOINT" )
