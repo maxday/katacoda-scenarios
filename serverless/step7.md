@@ -1,4 +1,4 @@
-Once the `serverless` framework installed, let's write our first deployment file!
+The `serverless` framework is now installed, let's write our first deployment file!
 
 *Once again, in this step, you don't need to write any code, make sure you understand the code, then click on `Copy to editor` on the following code snippet* 
 
@@ -15,7 +15,7 @@ configValidationMode: error
 
 custom:
   #This is the bucket where images will be stored
-  imageBucketName: serverless-workshop-image
+  imageBucketName: serverless-workshop-image-${self:provider.stage}
 
 provider:
   name: aws
@@ -38,6 +38,13 @@ provider:
             - "s3:PutObjectAcl"
             - "s3:GetObject"
           Resource: "arn:aws:s3:::${self:custom.imageBucketName}/*"
+
+resources:
+  Resources:
+    S3Assets:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.imageBucketName}
 
 functions:
   create-image-upload-url:

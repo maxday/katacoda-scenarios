@@ -16,8 +16,7 @@ const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");
 // placeholder-handler
 </pre>
 
-Make sure the newly created file is open with  
-`/root/workshop/create-urls.js`{{open}}
+Make sure the newly created file is correctly open in the file explorer.
 
 Then, write the handler function
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-handler">
@@ -55,7 +54,7 @@ To avoid any conflicts, let's generate a random filename, this will be the locat
 
 *Here we've added a custom log line to output the generated filename, we will be able to see this log in the Datadog UI later in the workshop*
 
-Then let's generate PutObject and GetObjects command to respectively add a document to S3 and retrieve it
+Then let's generate PutObject and GetObject command to respectively add a document to S3 and retrieve it
 
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-generate-commands">
     const unprocessedOptions = {
@@ -97,7 +96,7 @@ Then initialize a S3 Client and execute the three commands
 // placeholder-return
 </pre>
 
-Finally, return the 3 URLs and handle any error
+Finally, return the 3 URLs and handle any errors
 <pre class="file" data-filename="create-urls.js" data-target="insert" data-marker="// placeholder-return">
         return {
             statusCode: 202,
@@ -113,7 +112,7 @@ Finally, return the 3 URLs and handle any error
     }
 </pre>
 
-Woot woot! You've just completed coding the first handler function code!
+Woot woot! You've just completed coding the first handler function!
 
 Let's go to the next step to see how we can deploy it!
 

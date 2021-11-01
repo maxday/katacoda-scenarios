@@ -1,4 +1,4 @@
-To be as production-ready as possible in this workshop, this new function should be tested so let's add a new test file.
+To be as production-ready as possible in this workshop, this new function should be tested as well. So let's add a new test file.
 
 *In this step, you don't need to write any code, make sure you understand the code, then click on `Copy to editor` on each of the following code snippets* 
 

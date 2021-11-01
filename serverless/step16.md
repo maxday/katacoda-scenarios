@@ -9,10 +9,10 @@ Then we can create our second function, as a reminder this function will be auto
 
 So this function will :
 1. Be run automatically when an item is put into our bucket (by our first function for instance)
-2. Read the event payload to get the url of the image
+2. Reads the event payload to get the url of the image
 3. Fetches the image
-4. Perform a grayscale + crop
-5. Upload this new image in our bucket
+4. Performs a grayscale + crop
+5. Uploads this new image in our bucket
 
 <pre class="file" data-filename="trigger.js" data-target="replace">
 const { getSignedUrl } = require("@aws-sdk/s3-request-presigner");

@@ -1,8 +1,8 @@
-As we are here to build an service as production-ready as possible let's right some unit tests to ensure that our function is valid.
+As we are here to build a service as production-ready as possible let's right some unit tests to ensure that our function is valid before deploying it.
 
 *Once again, in this step, you don't need to write any code, make sure you understand the code, then click on `Copy to editor` on the following code snippet* 
 
-We often hear that it's not possible or quite difficult to unit test serverless application. We will see that that's not correct here.
+We often hear that it's not possible or quite difficult to unit test serverless application. We will see that it's not correct here.
 
 We are going to use the `jest` framework to write and run our unit tests, so let's install it now with  
 `npm install -g jest@27.2.4`{{execute}}
@@ -12,7 +12,7 @@ You can now try to run the tests with
 
 *Of course this will fail since we don't have any tests yet.*
 
-So let's create our first test suite which will be run against our previously writen function
+So let's create our first test suite which will be run against our previously written function
 
 <pre class="file" data-filename="create-urls.spec.js" data-target="replace">
 const handler = require('./create-urls').handler;
@@ -48,9 +48,9 @@ describe("handler", () => {
 Let's try again our jest command :  
 `jest`{{execute}}
 
-*If the tests are failing, wait 30sec and retry, the generated file might not have been saved yet*
+*If the tests are failing, please wait 30sec and retry, the generated file might not have been saved yet*
 
 Great our tests are passing!
 
-You can also run the tests with the coverage option to verify that every statements have been tested  
+You can also run the tests with the coverage option to verify that every statement has been tested  
 `jest --coverage`{{execute}}

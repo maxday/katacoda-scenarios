@@ -11,7 +11,7 @@ Let's have a look at those metrics!
 
 1. Select a valid timespan on the top right hand corner (like 1 hour)
 
-1. In `Graph:` type `aws.lambda.enhanced.duration` + `enter` to see a graph
+1. In `Graph:` type (not copy paste) `aws.lambda.enhanced.duration` + `enter` to see a graph
 
 1. This graph shows the timeserie of this metric for `all` lambda functions, you can add a tag in the `Over:` section with your service name (for instance : `service:mdavid`)
 

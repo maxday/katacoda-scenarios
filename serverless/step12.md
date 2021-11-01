@@ -5,7 +5,7 @@ A new Datadog account has been created for you, you can see login details with
 
 Then, select `APM` > `Traces` on the left menu
 
-Remember, in this workshop we are all using the same AWS account, so your application in the only one which shows up in Datadog (like it will be the case in a real production environment).
+In a production-like environement, it will be unlikely to have traces coming from only one single Lambda function.
 
 As we have `tagged` our service with `first letter of firstname + lastname` you can filter those traces with `@service:XXX` (for instance `@service:mdavid`)
 

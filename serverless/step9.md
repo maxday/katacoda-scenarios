@@ -8,4 +8,4 @@ Then run this script to test posting the image to our service
 
 Open up the URL printed under `Public unprocessed image URL`, you should see a beautiful cat!
 
-*Note that the processed URL is not yet available since you didn't build the second part yet*
+*Note that the processed URL is not yet available since we didn't build the second part yet*
